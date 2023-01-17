@@ -1,3 +1,4 @@
-export default function MyButton () {
-    return <button>hola mundo</button>;
+export default function MyButton (props) {
+  console.log(props);
+    return <button>{props.text}</button>;
   }
