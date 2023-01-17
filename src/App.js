@@ -2,24 +2,40 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const greeting = "bienvenidos a mi ecommerce!";
+
+  const mostrarCurso = () => "comision 43580 - React JS";
+
+  let styleHeader = {
+    backgroundColor: "black",
+    margin: "20px 10px",
+    border: "solid 3px red",
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <section className="App">
+      <div syle={styleHeader} className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p style={{color: "pink"}}> {mostrarCurso()} </p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          hola
+          {greeting}
+          <br/>
+          {"hola"}
         </a>
-      </header>
-    </div>
+        <MyButton />
+        <MyButton />
+        <MyButton />
+      </div>
+    </section>
   );
 }
 
+function MyButton () {
+  return <button>hola mundo</button>;
+};
 export default App;
