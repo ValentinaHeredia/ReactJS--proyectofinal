@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MyButton from "./components/Button"
 
 function App() {
   const greeting = "bienvenidos a mi ecommerce!";
@@ -35,7 +36,5 @@ function App() {
   );
 }
 
-function MyButton () {
-  return <button>hola mundo</button>;
-};
+
 export default App;
