@@ -1,4 +1,4 @@
-import "./button/button.css";
+import "./button.css";
 export default function MyButton (props) {
   console.log(props);
     return (
