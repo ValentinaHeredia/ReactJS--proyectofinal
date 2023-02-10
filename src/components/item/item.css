@@ -1,0 +1,13 @@
+.item-card{
+    text-align: center;
+    position: relative;
+    margin: 10px 15px;
+    padding-bottom: 25px;
+    width: 400px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.22);
+    background-color: #fde8f5;
+    overflow: hidden;  
+    transition: all 0.20s ease-in;
+    cursor: pointer;
+  }

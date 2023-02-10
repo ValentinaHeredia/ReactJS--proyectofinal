@@ -10,7 +10,7 @@ export default function Item({ title, price, detail, imgurl }) {
             <h2>{title}</h2>
         </div>
         <div className='item-card_img'>
-          <img src={imgurl} alt="imagen" />
+          <img width={400} src={imgurl} alt="imagen" />
         </div>
         <div className='item-card_detail'>
           <h4>$ {price}</h4>
