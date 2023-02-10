@@ -1,18 +1,33 @@
+import "./navbar.css";
+
 export default function NavBar(){
     return(
-        <ul>
-            <li>Logo</li>
-            <li>
-                <a href="/">Peluches</a>
-            </li>
-            <li>
-                <a href="/">Albumes</a>
-            </li>
-            <li>
-                <a href="/">Lightstick</a>
-            </li>
-            <span>cart</span>
-        </ul>
+        <nav>
+            <ul className="nav-menu">
+                <h2>
+                    <li>
+                        <a href="/">Logo</a>
+                    </li>
+                </h2>
+                <li className="nav-item">
+                    <a className="nav-link" href="/">
+                        Peluches
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/">
+                        Lightstick
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="/">
+                        Albumes
+                    </a>
+                </li>
+
+                <span>🛒</span>
+            </ul>
+        </nav>
     )
 };
 

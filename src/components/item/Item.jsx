@@ -1,15 +1,22 @@
-import React from 'react'
+import React from 'react';
+import "./item.css";
 
-export default function Item(props) {
-  const {title, price, detail, imgurl} = props;
+import { ButtonChild } from "../button/Button";
+
+export default function Item({ title, price, detail, imgurl }) {
   return (
-    <div>
-        <div>
-            <img width="180" src={imgurl} alt="imagen" />
+    <div className="item-card">
+        <div className="item-card_header">
+            <h2>{title}</h2>
         </div>
-        <h3> {title} </h3>
-        <h4> {price} </h4>
-        <p> {detail} </p>
+        <div className='item-card_img'>
+          <img src={imgurl} alt="imagen" />
+        </div>
+        <div className='item-card_detail'>
+          <h4>$ {price}</h4>
+          <p>{detail}</p>
+          <ButtonChild>Ver detalle</ButtonChild>
+        </div>
     </div>
     
   );
